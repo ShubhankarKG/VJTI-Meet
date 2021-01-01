@@ -2,12 +2,12 @@
   "name": "AssetManager",
   "version": "1.0.0",
   "description": "A cross-platform desktop application that will be responsible for your asset management.",
-  "main": "main.js",
+  "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "prestart": "npm run build",
-    "start": "electron ./dist/main.js"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
