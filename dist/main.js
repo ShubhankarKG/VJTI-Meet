@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const electron_1 = require("electron");
-const path_1 = __importDefault(require("path"));
 const url_1 = __importDefault(require("url"));
 function createWindow() {
     const win = new electron_1.BrowserWindow({
@@ -15,8 +14,8 @@ function createWindow() {
         },
     });
     win.loadURL(url_1.default.format({
-        pathname: path_1.default.join(__dirname, '../static/index.html'),
-        protocol: 'file',
+        pathname: "localhost:3000",
+        protocol: "http",
         slashes: true
     }));
 }

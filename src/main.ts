@@ -12,8 +12,8 @@ function createWindow() {
   });
 
   win.loadURL(url.format({
-    pathname: path.join(__dirname,'../static/index.html'),
-    protocol: 'file',
+    pathname: "localhost:3000",
+    protocol: "http",
     slashes: true
   }));
 }

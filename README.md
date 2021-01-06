@@ -1,2 +1,2 @@
-# AssetManager
-A cross-platform desktop application that will be responsible for your asset management.
+# VJTI-Meet
+A cross-platform desktop application that you will be using for your future video calls.

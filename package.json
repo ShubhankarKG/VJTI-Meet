@@ -1,26 +1,29 @@
 {
-  "name": "AssetManager",
+  "name": "VJTI-Meet",
   "version": "1.0.0",
-  "description": "A cross-platform desktop application that will be responsible for your asset management.",
+  "description": "A cross-platform desktop application that you will be using for your future video calls.",
   "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
+    "client": "npm run start --prefix react-client",
     "prestart": "npm run build",
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "concurrently \"npm run client\" \"npm start\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShubhankarKG/AssetManager.git"
+    "url": "git+https://github.com/ShubhankarKG/VJTI-Meet.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ShubhankarKG/AssetManager/issues"
+    "url": "https://github.com/ShubhankarKG/VJTI-Meet/issues"
   },
-  "homepage": "https://github.com/ShubhankarKG/AssetManager#readme",
+  "homepage": "https://github.com/ShubhankarKG/VJTI-Meet#readme",
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "electron": "^11.1.1"
   }
 }
