@@ -1,4 +1,6 @@
-const { app, BrowserWindow } = require("electron");
+import { app, BrowserWindow } from "electron";
+import path from 'path';
+import url from 'url';
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -9,7 +11,11 @@ function createWindow() {
     },
   });
 
-  win.loadFile("index.html");
+  win.loadURL(url.format({
+    pathname: "localhost:3000",
+    protocol: "http",
+    slashes: true
+  }));
 }
 
 app.whenReady().then(createWindow);
