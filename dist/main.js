@@ -30,3 +30,7 @@ electron_1.app.on("activate", () => {
         createWindow();
     }
 });
+electron_1.app.on('ready', () => {
+    const win = new electron_1.BrowserWindow({ width: 800, height: 600 });
+    win.loadURL('http://localhost:3000/');
+});
