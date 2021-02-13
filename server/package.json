@@ -1,0 +1,27 @@
+{
+  "name": "vjti-meet",
+  "version": "1.0.0",
+  "description": "A cross-platform desktop application that you will be using for your future video calls.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leovaldez42/Video-call.git"
+  },
+  "author": "Leovaldez42",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leovaldez42/Video-call/issues"
+  },
+  "homepage": "https://github.com/Leovaldez42/Video-call#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "peer": "^0.6.1",
+    "socket.io": "^3.1.1",
+    "uuid": "^8.3.2"
+  }
+}
