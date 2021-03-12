@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { Box, makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import { AppBar,IconButton,Toolbar,Typography } from '@material-ui/core'
 import { Sort } from '@material-ui/icons';
 
@@ -50,10 +49,6 @@ const useStyles = makeStyles((theme)=>({
 
 const Header = () =>{
     const classes = useStyles();
-    const [checked,setChecked]=useState(false);
-    useEffect(()=>{
-        setChecked(true);
-    },[]);
     return(
         <div className={classes.root} id="header">
             
